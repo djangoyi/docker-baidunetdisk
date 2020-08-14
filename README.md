@@ -17,7 +17,7 @@
 
 ### 启动镜像
 
-`sudo docker run -d -p 5901:5901 -p 6080:6080 djangoyi/baidunetdisk:v3.3.2`
+`sudo docker run -d --privileged -p 5901:5901 -p 6080:6080 djangoyi/baidunetdisk:v3.3.2`
 
 vnc客户端通过5901端口访问容器，浏览器通过6080端口访问容器。`-p`选项至少保留1个，可减少访问容器的麻烦。
 
